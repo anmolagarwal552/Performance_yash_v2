@@ -158,12 +158,7 @@
                     if (mixLikesCount) {
                         const displayBox2 = document.createElement('div');
                         displayBox2.className = 'display-box';
-                        if(mixLikesCount < 1000){
-                            displayBox2.textContent = `771 | ${url} | ${mixLikesCount}`;
-                        }
-                        else{
-                            displayBox2.textContent = `685 | ${url} | ${mixLikesCount}`;
-                        }
+                        displayBox2.textContent = `685 | ${url} | ${mixLikesCount}`;
                         displayBox2.addEventListener('click', () => copyToClipboard(displayBox2.textContent));
                         displayContainer.appendChild(displayBox2);
                     }
